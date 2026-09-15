@@ -1,0 +1,53 @@
+validated/ela-writing/kennedy-inaugural.json
+  s_e8c5dc23e2141e::t_70607275bf6f1e 1-38
+README.md
+  s_e8c5dc23e2141e::t_a1125c1577983d 1-234
+validated/ela-writing/openstax-wgwh-rhetorical-analysis-intro.json
+  s_e8c5dc23e2141e::t_f35da7b210bcf6 1-37
+reports/coverage-2026-09-15.md
+  s_e8c5dc23e2141e::t_4c69b0da9e5c2e 1-21
+validated/ela-writing/douglass-narrative.json
+  s_e8c5dc23e2141e::t_9c2195c4dbb44a 1-38
+.gitignore
+  s_e8c5dc23e2141e::t_0e632518665bac 1-2
+provenance.jsonl
+  s_e8c5dc23e2141e::t_9856583628d4bf 1-10
+provenance.md
+  s_e8c5dc23e2141e::t_a15bceb0134628 1-16
+validated/ela-writing/stanton-declaration-sentiments.json
+  s_e8c5dc23e2141e::t_fde7586bbb9f9b 1-39
+validated/ela-writing/eisenhower-farewell.json
+  s_e8c5dc23e2141e::t_62364da7b39f08 1-39
+validated/ela-writing/douglass-what-to-the-slave.json
+  s_e8c5dc23e2141e::t_f34cd7aef7288e 1-37
+seeds/ela-writing/g11-12-ap-lang.jsonl
+  s_e8c5dc23e2141e::t_c028d2d47c19c7 1-11
+engine/engine.py
+  s_e8c5dc23e2141e::t_40a449b9905ca2 1-535
+validated/ela-writing/thoreau-civil-disobedience.json
+  s_e8c5dc23e2141e::t_51e6e8f5049246 1-38
+validated/ela-writing/swift-modest-proposal.json
+  s_e8c5dc23e2141e::t_57b89009c30743 1-38
+LICENSE
+  s_e8c5dc23e2141e::t_c0cf3531d8e907 1-21
+validated/ela-writing/lincoln-second-inaugural.json
+  s_e8c5dc23e2141e::t_7bc510a5849ca9 1-38
+validated/ela-writing/dubois-souls.json
+  s_e8c5dc23e2141e::t_1c549b94a0c884 1-38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "3b0a1c8d432c32d5766e342b60e1b2f1264a2c37",
+  "prompts": {},
+  "sessions": {
+    "s_e8c5dc23e2141e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a7751bc7-5b0e-4cd9-a313-1e83136599a5",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Logan May (Work) <loganwork@mac.lan>"
+    }
+  }
+}
