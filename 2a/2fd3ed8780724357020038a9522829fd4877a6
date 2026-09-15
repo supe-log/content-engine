@@ -1,0 +1,53 @@
+seeds/ela-writing/synthesis-sets.jsonl
+  s_e8c5dc23e2141e::t_0de654b1c3f87d 1-12
+engine/engine.py
+  s_e8c5dc23e2141e::t_096ddfcd167edf 449-451
+README.md
+  s_e8c5dc23e2141e::t_82b07447d33104 308-314
+  s_e8c5dc23e2141e::t_2da07d4c300231 183-208,215-219,222-227
+  s_e8c5dc23e2141e::t_65109227d083de 269-273
+curriculum/g11-ap-lang-4.json
+  s_e8c5dc23e2141e::t_95306b201b734b 6-7,15-19,31-44,51-64,71-85,92-106,113-126,133-146,153-167,171,174-186,189
+provenance.jsonl
+  s_e8c5dc23e2141e::t_afd45de15cc51c 6,9-14,19,22
+provenance.md
+  s_e8c5dc23e2141e::t_d15e3363239eef 12,15-20,25,28
+reports/coverage-2026-09-15.md
+  s_e8c5dc23e2141e::t_4ffbc8bcf57d39 3-29,41-42,48-49
+reports/ladder-gaps-2026-09-15.md
+  s_e8c5dc23e2141e::t_1da49b5ba9b8d6 15,18,21,23,25,29,32,34
+validated/ela-writing/homestead-act.json
+  s_e8c5dc23e2141e::t_93b0ea0e13830a 1-39
+validated/ela-writing/muir-national-parks.json
+  s_e8c5dc23e2141e::t_4b4c8f532260ba 1-39
+validated/ela-writing/nps-history.json
+  s_e8c5dc23e2141e::t_3672ac19ee0683 1-37
+validated/ela-writing/nps-organic-act.json
+  s_e8c5dc23e2141e::t_1cc25992ce1653 1-38
+validated/ela-writing/nps-visitation-numbers.json
+  s_e8c5dc23e2141e::t_68640be2691795 1-37
+validated/ela-writing/openstax-wgwh-argumentative-research-intro.json
+  s_e8c5dc23e2141e::t_8e73ae17d4934b 1-38
+validated/ela-writing/openstax-wgwh-research-process-intro.json
+  s_e8c5dc23e2141e::t_687881036f359f 1-37
+validated/ela-writing/tr-seventh-annual-message.json
+  s_e8c5dc23e2141e::t_2233f79863c522 1-39
+validated/ela-writing/yellowstone-protection-act.json
+  s_e8c5dc23e2141e::t_c1cc3886680889 1-38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "2a2fd3ed8780724357020038a9522829fd4877a6",
+  "prompts": {},
+  "sessions": {
+    "s_e8c5dc23e2141e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a7751bc7-5b0e-4cd9-a313-1e83136599a5",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Logan May <logan.may@superbuilders.school>"
+    }
+  }
+}
