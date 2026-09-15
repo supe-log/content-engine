@@ -1,0 +1,47 @@
+curriculum/g10-bridge.json
+  s_e8c5dc23e2141e::t_63f5a294a5f0a6 1-75
+engine/engine.py
+  s_e8c5dc23e2141e::t_7e768f8d841959 514-596,599
+  s_e8c5dc23e2141e::t_861ef9d2f33523 609-610
+seeds/ela-writing/g10-bridge.jsonl
+  s_e8c5dc23e2141e::t_1e32ce5ce01864 1-4
+curriculum/g11-ap-lang-4.json
+  s_e8c5dc23e2141e::t_edcc340a52a3a2 1-95
+curriculum/g12-ap-lang-5.json
+  s_e8c5dc23e2141e::t_639f79e65ee472 1-54
+README.md
+  s_e8c5dc23e2141e::t_3b421ac398a3e4 59
+  s_e8c5dc23e2141e::t_e480d8f0e4a1cd 289-296
+  s_e8c5dc23e2141e::t_4553b6413822f5 267-268,271
+  s_e8c5dc23e2141e::t_0403b0a9ebeef2 149-211
+curriculum/g9-acc-core.json
+  s_e8c5dc23e2141e::t_8a6663b80ddb94 1-208
+provenance.jsonl
+  s_e8c5dc23e2141e::t_7460218637a85d 1,12-13
+provenance.md
+  s_e8c5dc23e2141e::t_e1a83da5bb2d37 7,18-19
+reports/ladder-gaps-2026-09-15.md
+  s_e8c5dc23e2141e::t_f6f1cb6916541e 1-34
+validated/ela-writing/declaration-of-independence.json
+  s_e8c5dc23e2141e::t_eb031ef05f3779 1-39
+validated/ela-writing/truth-aint-i-a-woman.json
+  s_e8c5dc23e2141e::t_47439cd9ef2372 1-38
+validated/ela-writing/washington-farewell.json
+  s_e8c5dc23e2141e::t_916fc39dcb6df8 1-38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "08e1f83b99724232a4823d78162f988f67940b1c",
+  "prompts": {},
+  "sessions": {
+    "s_e8c5dc23e2141e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a7751bc7-5b0e-4cd9-a313-1e83136599a5",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Logan May <logan.may@superbuilders.school>"
+    }
+  }
+}
