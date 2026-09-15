@@ -1,0 +1,19 @@
+.gitignore
+  s_e8c5dc23e2141e::t_5d8f5e96812fc4 3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "fde037e93d5bdaa5b9ec96ac8e67d1524d31f097",
+  "prompts": {},
+  "sessions": {
+    "s_e8c5dc23e2141e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a7751bc7-5b0e-4cd9-a313-1e83136599a5",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Logan May <logan.may@superbuilders.school>"
+    }
+  }
+}
