@@ -511,9 +511,92 @@ def cmd_report() -> None:
     print(f"wrote {out}")
 
 
+CURRICULUM_DIR = LAB_ROOT / "curriculum"
+
+
+def cmd_gaps() -> int:
+    """Measure the curriculum ladder: unresolved dependencies + content deficits.
+
+    The ladder is every curriculum/*.json band ordered by ladderIndex. A skill
+    may depend only on skills defined at its own rung or below; each skill's
+    contentNeeds are checked against the validated corpus (matched on
+    contentTags x targetUse). The output is a work list, largest deficit
+    first — the same shape the consuming app's own audit produces.
+    """
+    bands = [json.loads(p.read_text()) for p in sorted(CURRICULUM_DIR.glob("*.json"))]
+    if not bands:
+        sys.exit("FAIL no curriculum bands in curriculum/")
+    bands.sort(key=lambda b: b.get("ladderIndex", 0))
+    band_of: dict[str, str] = {}
+    index_of_band: dict[str, int] = {}
+    for band in bands:
+        index_of_band[band["bandId"]] = band.get("ladderIndex", 0)
+        for s in band["skills"]:
+            if s["skillId"] in band_of:
+                sys.exit(f"FAIL skill {s['skillId']} defined in two bands")
+            band_of[s["skillId"]] = band["bandId"]
+
+    dep_issues: list[str] = []
+    for band in bands:
+        for s in band["skills"]:
+            for dep in list(s.get("dependsOn", [])) + list(s.get("prerequisites", [])):
+                if dep not in band_of:
+                    dep_issues.append(
+                        f"{band['bandId']}/{s['skillId']} depends on UNDEFINED skill {dep!r}")
+                elif index_of_band[band_of[dep]] > band.get("ladderIndex", 0):
+                    dep_issues.append(
+                        f"{band['bandId']}/{s['skillId']} depends on {dep!r} defined ABOVE it "
+                        f"({band_of[dep]}) — the ladder is out of order")
+
+    corpus = [json.loads(p.read_text()) for p in sorted(VALIDATED_DIR.rglob("*.json"))]
+
+    def have(tags: list[str], use: str) -> int:
+        return sum(1 for a in corpus
+                   if a["targetUse"] == use and set(a["skills"]) & set(tags))
+
+    rows: list[dict] = []
+    for band in bands:
+        for s in band["skills"]:
+            for need in s.get("contentNeeds", []):
+                got = have(s.get("contentTags", []), need["targetUse"])
+                rows.append({
+                    "band": band["bandId"], "skill": s["skillId"],
+                    "use": need["targetUse"], "need": need["minSources"],
+                    "have": got, "gap": max(0, need["minSources"] - got),
+                })
+    rows.sort(key=lambda r: (-r["gap"], r["band"], r["skill"]))
+
+    lines = [f"# Ladder gap report — {date.today().isoformat()}", ""]
+    lines.append("Ladder: " + " → ".join(
+        f"{b['bandId']} ({len(b['skills'])} skills, {b['status']})" for b in bands))
+    lines += ["", "## Dependency integrity", ""]
+    if dep_issues:
+        lines += [f"- ❌ {i}" for i in dep_issues]
+    else:
+        lines.append("- ✅ every dependsOn/prerequisite resolves at or below its own rung "
+                     f"({sum(len(b['skills']) for b in bands)} skills across {len(bands)} bands)")
+    lines += ["", "## Content coverage vs. targets (largest deficit first)", "",
+              "| band | skill | needs | have | gap |", "|---|---|---|---|---|"]
+    for r in rows:
+        mark = "❌" if r["gap"] else "✅"
+        lines.append(f"| {r['band']} | {r['skill']} | {r['need']} × {r['use']} "
+                     f"| {r['have']} | {mark} {r['gap']} |")
+    open_gaps = [r for r in rows if r["gap"]]
+    lines += ["", f"**{len(open_gaps)} open content gap(s)**, "
+              f"{sum(r['gap'] for r in open_gaps)} source(s) short in total. "
+              "G9 skills carry no contentNeeds here: their assessment gaps are the "
+              "consuming app's own audit (bottleneck_skill findings), not source-text gaps."]
+    REPORTS_DIR.mkdir(exist_ok=True)
+    out = REPORTS_DIR / f"ladder-gaps-{date.today().isoformat()}.md"
+    out.write_text("\n".join(lines) + "\n")
+    print("\n".join(lines[2:6]))
+    print(f"...\n{len(open_gaps)} open gap(s), {len(dep_issues)} dependency issue(s) → {out}")
+    return len(dep_issues)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["fetch", "validate", "report"])
+    parser.add_argument("command", choices=["fetch", "validate", "report", "gaps"])
     parser.add_argument("--domain")
     parser.add_argument("--band")
     parser.add_argument("--only")
@@ -523,6 +606,8 @@ def main() -> None:
     if args.command == "report":
         cmd_report()
         return
+    if args.command == "gaps":
+        sys.exit(1 if cmd_gaps() else 0)
     seeds = load_seeds(args.domain, args.band, args.only)
     if not seeds:
         sys.exit("FAIL no seeds matched the filters")

@@ -1,0 +1,54 @@
+{
+  "schema": "curriculum-band.v1",
+  "bandId": "g12-ap-lang-5",
+  "gradeBand": "g12",
+  "ladderIndex": 3,
+  "title": "Grade 12 — AP Lang, optimized for a 5",
+  "spine": "Same CED skill categories as g11-ap-lang-4 at a higher bar, plus the skills that separate a 5 from a 4",
+  "status": "target",
+  "extends": "g11-ap-lang-4",
+  "scoreProfile": {
+    "target": "AP Lang 5 profile",
+    "note": "Design targets on the 3-row FRQ rubric, NOT official College Board cut scores. The 5 profile is the 4 profile plus sustained Row B ceilings and deliberately earned sophistication.",
+    "rowA_thesis": "1, every FRQ, every time",
+    "rowB_evidenceCommentary": "4 of 4, sustained across all three FRQ types under time",
+    "rowC_sophistication": "earned on at least one FRQ per exam, by design not by accident",
+    "frqTypes": ["synthesis", "rhetorical_analysis", "argument"]
+  },
+  "provenance": {
+    "source": "Derived 2026-09-15 from the g11 band plus the Row C / Row B-ceiling behaviors visible in officially scored high samples (studied lab-side; no College Board text reproduced)",
+    "note": "The three added skills are what the scored-sample rationales consistently reward above the 4 line: complexity/tension, broader context, and vivid persuasive style — plus exam-scale stamina."
+  },
+  "skills": [
+    {
+      "skillId": "earn-sophistication",
+      "title": "Earn Row C deliberately: explore tensions, situate the broader context, sustain a vivid style",
+      "strand": "style",
+      "grain": "integrative",
+      "dependsOn": ["stl-writing", "reo-writing", "revise-summary-into-analysis", "judge-your-own-analysis"],
+      "rationale": "Row C is scored as a property of the whole essay. It has to be taught as named, practicable moves — complexity between sources, implications beyond the prompt, controlled persuasive style — or it stays luck.",
+      "contentTags": ["rhetorical-analysis", "argument"],
+      "contentNeeds": [{"targetUse": "passage", "minSources": 4}, {"targetUse": "instructional", "minSources": 1}]
+    },
+    {
+      "skillId": "sustain-row-b-ceiling",
+      "title": "Hold Evidence & Commentary at 4/4 across all three FRQ types under time",
+      "strand": "claims-evidence",
+      "grain": "integrative",
+      "dependsOn": ["cle-writing", "rhs-writing", "write-rhetorical-analysis-essay"],
+      "rationale": "The observable difference between most 4s and 5s is Row B consistency: specific, embedded evidence with commentary that never drops to paraphrase, on the weakest of the three essays, not the strongest.",
+      "contentTags": ["rhetorical-analysis", "synthesis", "argument"],
+      "contentNeeds": [{"targetUse": "passage", "minSources": 6}, {"targetUse": "synthesis_source", "minSources": 6}]
+    },
+    {
+      "skillId": "full-exam-command",
+      "title": "Run the whole exam: MCQ pacing plus three FRQs at 40 minutes each",
+      "strand": "reasoning-organization",
+      "grain": "integrative",
+      "dependsOn": ["rhs-reading", "cle-reading", "reo-reading", "stl-reading", "earn-sophistication"],
+      "rationale": "A 5 is a composite: strong MCQ over paired reading/writing questions plus three timed essays. Pacing and triage are trained skills with their own practice forms.",
+      "contentTags": ["rhetorical-analysis", "argument", "synthesis"],
+      "contentNeeds": [{"targetUse": "passage", "minSources": 8}]
+    }
+  ]
+}

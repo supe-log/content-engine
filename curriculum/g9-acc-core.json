@@ -1,0 +1,208 @@
+{
+  "schema": "curriculum-band.v1",
+  "bandId": "g9-acc-core",
+  "gradeBand": "g9",
+  "title": "Grade 9 \u2014 analytical writing core (ACC-aligned)",
+  "spine": "Alpha Common Core (ACC) \u2014 claim/evidence/reasoning pilot strands",
+  "status": "mapped",
+  "provenance": {
+    "source": "BaconWrite Curriculum Intelligence Map export, 2026-09-15",
+    "note": "Skill graph as modelled and audited in the live G9 course; every authored pedagogical claim in the source graph carries reviewStatus=unreviewed until a human validates it."
+  },
+  "skills": [
+    {
+      "skillId": "tell-evidence-from-reasoning",
+      "title": "Tell evidence apart from reasoning",
+      "strand": "evidence",
+      "grain": "recognition",
+      "taughtIn": [
+        "L03"
+      ],
+      "prerequisites": []
+    },
+    {
+      "skillId": "write-attributed-evidence-sentence",
+      "title": "Write an attributed evidence sentence",
+      "strand": "evidence",
+      "grain": "production",
+      "taughtIn": [
+        "L03"
+      ],
+      "prerequisites": [
+        "tell-evidence-from-reasoning"
+      ]
+    },
+    {
+      "skillId": "tell-evidence-from-commentary",
+      "title": "Tell evidence apart from commentary",
+      "strand": "reasoning",
+      "grain": "recognition",
+      "taughtIn": [
+        "L13"
+      ],
+      "prerequisites": [
+        "tell-evidence-from-reasoning"
+      ]
+    },
+    {
+      "skillId": "recall-core-analytical-sentence",
+      "title": "Recall the core analytical sentence formula",
+      "strand": "reasoning",
+      "grain": "recognition",
+      "taughtIn": [
+        "L13"
+      ],
+      "prerequisites": [
+        "tell-evidence-from-commentary"
+      ]
+    },
+    {
+      "skillId": "order-evidence-and-commentary",
+      "title": "Order evidence and commentary in a paragraph",
+      "strand": "reasoning",
+      "grain": "recognition",
+      "taughtIn": [
+        "L14"
+      ],
+      "prerequisites": [
+        "recall-core-analytical-sentence"
+      ]
+    },
+    {
+      "skillId": "write-commentary-that-reaches-effect",
+      "title": "Write commentary that reaches effect",
+      "strand": "reasoning",
+      "grain": "production",
+      "taughtIn": [
+        "L13"
+      ],
+      "prerequisites": [
+        "recall-core-analytical-sentence",
+        "write-attributed-evidence-sentence",
+        "write-sfe-chain"
+      ]
+    },
+    {
+      "skillId": "write-analytical-paragraph",
+      "title": "Write a complete analytical paragraph",
+      "strand": "reasoning",
+      "grain": "integrative",
+      "taughtIn": [
+        "L14"
+      ],
+      "prerequisites": [
+        "order-evidence-and-commentary",
+        "write-commentary-that-reaches-effect"
+      ]
+    },
+    {
+      "skillId": "apply-everything-is-a-choice",
+      "title": "Treat every authorial move as a choice",
+      "strand": "analysis",
+      "grain": "recognition",
+      "taughtIn": [
+        "L06"
+      ],
+      "prerequisites": []
+    },
+    {
+      "skillId": "run-a-choice-audit",
+      "title": "Run a choice audit",
+      "strand": "analysis",
+      "grain": "recognition",
+      "taughtIn": [
+        "L06"
+      ],
+      "prerequisites": [
+        "apply-everything-is-a-choice"
+      ]
+    },
+    {
+      "skillId": "name-an-author-choice-type",
+      "title": "Name the type of an author's choice",
+      "strand": "analysis",
+      "grain": "recognition",
+      "taughtIn": [
+        "L07"
+      ],
+      "prerequisites": [
+        "apply-three-read-protocol"
+      ]
+    },
+    {
+      "skillId": "apply-three-read-protocol",
+      "title": "Apply the three-read close reading protocol",
+      "strand": "analysis",
+      "grain": "recognition",
+      "taughtIn": [
+        "L07"
+      ],
+      "prerequisites": [
+        "apply-everything-is-a-choice"
+      ]
+    },
+    {
+      "skillId": "distinguish-sfe-levels",
+      "title": "Tell the three S-F-E levels apart",
+      "strand": "analysis",
+      "grain": "recognition",
+      "taughtIn": [
+        "L08"
+      ],
+      "prerequisites": [
+        "name-an-author-choice-type"
+      ]
+    },
+    {
+      "skillId": "write-sfe-chain",
+      "title": "Write a complete S-F-E chain",
+      "strand": "analysis",
+      "grain": "production",
+      "taughtIn": [
+        "L08"
+      ],
+      "prerequisites": [
+        "distinguish-sfe-levels",
+        "run-a-choice-audit"
+      ]
+    },
+    {
+      "skillId": "tell-analysis-from-summary",
+      "title": "Tell analysis apart from summary",
+      "strand": "analysis",
+      "grain": "recognition",
+      "taughtIn": [
+        "L09"
+      ],
+      "prerequisites": [
+        "distinguish-sfe-levels"
+      ]
+    },
+    {
+      "skillId": "revise-summary-into-analysis",
+      "title": "Revise a summary sentence into analysis",
+      "strand": "analysis",
+      "grain": "production",
+      "taughtIn": [
+        "L15"
+      ],
+      "prerequisites": [
+        "tell-analysis-from-summary"
+      ]
+    },
+    {
+      "skillId": "judge-your-own-analysis",
+      "title": "Judge the quality of your own analysis",
+      "strand": "analysis",
+      "grain": "integrative",
+      "taughtIn": [
+        "L15"
+      ],
+      "prerequisites": [
+        "tell-analysis-from-summary",
+        "write-analytical-paragraph"
+      ]
+    }
+  ],
+  "ladderIndex": 0
+}

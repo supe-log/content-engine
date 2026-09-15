@@ -1,0 +1,38 @@
+{
+  "schema": "sourced-text.v1",
+  "seedId": "truth-aint-i-a-woman",
+  "title": "Ain't I a Woman?",
+  "author": "Sojourner Truth",
+  "year": 1851,
+  "domain": "ela-writing",
+  "gradeBand": "g10-bridge",
+  "targetUse": "passage",
+  "skills": [
+    "rhetorical-analysis"
+  ],
+  "landingShapes": [
+    "passage_box",
+    "annotated_passage",
+    "source_texts"
+  ],
+  "provenance": {
+    "source": "wikisource",
+    "sourceRef": "Ain't I a Woman?",
+    "urlUsed": "https://en.wikisource.org/wiki/Ain%27t_I_a_Woman%3F",
+    "sha256": "053439453a5f6dc72ce6fd5ee522826a65b7ad40958e81cd6c56323c5fc0eeb6",
+    "retrievedAt": "2026-09-15T17:14:18Z",
+    "license": "public-domain-pre1931",
+    "licenseRationale": "Delivered 1851, contemporaneous published reports; US public domain"
+  },
+  "metrics": {
+    "wordCount": 345,
+    "sentenceCount": 25,
+    "fleschKincaidGrade": 4.4,
+    "replacementChars": 0,
+    "excerptRequired": false
+  },
+  "text": "Well, children, where there is so much racket there must be something out of kilter. I think that 'twixt the negroes of the South and the women at the North, all talking about rights, the white men will be in a fix pretty soon. But what's all this here talking about?\n\nThat man over there says that women need to be helped into carriages, and lifted over ditches, and to have the best place everywhere. Nobody ever helps me into carriages, or over mud-puddles, or gives me any best place! And ain't I a woman? Look at me! Look at my arm! I have ploughed and planted, and gathered into barns, and no man could head me! And ain't I a woman? I could work as much and eat as much as a man\u2014when I could get it\u2014and bear the lash as well! And ain't I a woman? I have borne thirteen children, and seen most all sold off to slavery, and when I cried out with my mother's grief, none but Jesus heard me! And ain't I a woman?\n\nThen they talk about this thing in the head; what's this they call it? [member of audience whispers, \"intellect\"] That's it, honey. What's that got to do with women's rights or negroes' rights? If my cup won't hold but a pint, and yours holds a quart, wouldn't you be mean not to let me have my little half measure full?\n\nThen that little man in black there, he says women can't have as much rights as men, 'cause Christ wasn't a woman! Where did your Christ come from? From God and a woman! Man had nothing to do with Him.\n\nIf the first woman God ever made was strong enough to turn the world upside down all alone, these women together ought to be able to turn it back, and get it right side up again! And now they is asking to do it, the men better let them.\n\nObliged to you for hearing me, and now old Sojourner ain't got nothing more to say.",
+  "review": {
+    "status": "unreviewed"
+  }
+}

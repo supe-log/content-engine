@@ -1,0 +1,75 @@
+{
+  "schema": "curriculum-band.v1",
+  "bandId": "g10-bridge",
+  "gradeBand": "g10",
+  "ladderIndex": 1,
+  "title": "Grade 10 — the bridge from analytical core to AP Lang",
+  "spine": "ACC-aligned, introducing AP writing skills (per the learning-science read: G10 stays ACC but starts the AP ramp)",
+  "status": "proposed",
+  "provenance": {
+    "source": "Derived 2026-09-15 as the diff between the AP Lang CED skill dependencies and the mapped G9 graph",
+    "note": "Every skill here is a PROPOSED bridge claim pending learning-science review. The gaps command computes which of these the AP bands depend on; a reviewer decides whether each belongs in G10 or moves."
+  },
+  "skills": [
+    {
+      "skillId": "analyze-rhetorical-situation",
+      "title": "Analyze a full rhetorical situation (speaker, purpose, audience, context, exigence)",
+      "strand": "analysis",
+      "grain": "recognition",
+      "dependsOn": ["apply-three-read-protocol", "apply-everything-is-a-choice"],
+      "rationale": "G9 teaches choice-spotting inside a text; AP requires reading every choice as a response to a situation outside the text. Nothing in G9 models situation-driven analysis.",
+      "contentTags": ["rhetorical-analysis"],
+      "contentNeeds": [{"targetUse": "passage", "minSources": 4}, {"targetUse": "instructional", "minSources": 1}]
+    },
+    {
+      "skillId": "synthesize-multiple-sources",
+      "title": "Build one argument from multiple provided sources, citing at least three",
+      "strand": "evidence",
+      "grain": "integrative",
+      "dependsOn": ["write-attributed-evidence-sentence", "order-evidence-and-commentary"],
+      "rationale": "The AP synthesis FRQ has no G9 ancestor: G9 evidence work is single-source. Multi-source positioning (sources that disagree, a visual source) is a new skill, not a harder version of an old one.",
+      "contentTags": ["synthesis"],
+      "contentNeeds": [{"targetUse": "synthesis_source", "minSources": 6}]
+    },
+    {
+      "skillId": "qualify-and-rebut-claims",
+      "title": "Qualify a claim and answer the strongest counterargument on its merits",
+      "strand": "reasoning",
+      "grain": "production",
+      "dependsOn": ["write-analytical-paragraph"],
+      "rationale": "G9 L04 introduces counterarguments; AP argument essays reward calibrated claims (concession, qualification, rebuttal) as a habit, which is the seed of Row C sophistication.",
+      "contentTags": ["argument"],
+      "contentNeeds": [{"targetUse": "passage", "minSources": 3}]
+    },
+    {
+      "skillId": "write-rhetorical-analysis-essay",
+      "title": "Write a timed rhetorical-analysis essay on an unseen passage",
+      "strand": "analysis",
+      "grain": "integrative",
+      "dependsOn": ["write-analytical-paragraph", "run-a-choice-audit", "write-sfe-chain"],
+      "rationale": "G9 builds every ingredient (choice audit, S-F-E chains, analytical paragraphs) but never assembles them into the timed whole-essay form the FRQ demands.",
+      "contentTags": ["rhetorical-analysis"],
+      "contentNeeds": [{"targetUse": "passage", "minSources": 6}]
+    },
+    {
+      "skillId": "evaluate-and-attribute-sources",
+      "title": "Evaluate a source's position and credibility; attribute it cleanly",
+      "strand": "evidence",
+      "grain": "recognition",
+      "dependsOn": ["tell-evidence-from-reasoning", "tell-evidence-from-commentary"],
+      "rationale": "Synthesis sources arrive with agendas. G9 attribution is mechanical (name the source); AP requires reading what a source is doing before enlisting it.",
+      "contentTags": ["synthesis", "argument"],
+      "contentNeeds": [{"targetUse": "synthesis_source", "minSources": 4}]
+    },
+    {
+      "skillId": "read-complex-period-prose",
+      "title": "Read pre-20th-century argumentative prose with fluency",
+      "strand": "analysis",
+      "grain": "recognition",
+      "dependsOn": ["apply-three-read-protocol"],
+      "rationale": "AP passages routinely predate 1900 (Chesterfield, Banneker, Adams). Stamina on period syntax and diction is a ramp, and it must start before G11.",
+      "contentTags": ["rhetorical-analysis", "satire-irony"],
+      "contentNeeds": [{"targetUse": "passage", "minSources": 5}]
+    }
+  ]
+}

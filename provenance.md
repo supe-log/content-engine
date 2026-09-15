@@ -4,6 +4,7 @@ Every fetched source, one row per seed, written at download time.
 
 | seedId | title | author | year | source | license | retrieved | sha256 (12) |
 |---|---|---|---|---|---|---|---|
+| declaration-of-independence | Declaration of Independence | Thomas Jefferson et al. | 1776 | url | public-domain-pre1931 | 2026-09-15 | 2d71a64ad33c |
 | douglass-narrative | Narrative of the Life of Frederick Douglass | Frederick Douglass | 1845 | gutenberg | public-domain-pre1931 | 2026-09-15 | 4ef9c36d2c4d |
 | douglass-what-to-the-slave | What to the Slave Is the Fourth of July? | Frederick Douglass | 1852 | wikisource | public-domain-pre1931 | 2026-09-15 | b74fc0704e5c |
 | dubois-souls | The Souls of Black Folk | W. E. B. Du Bois | 1903 | gutenberg | public-domain-pre1931 | 2026-09-15 | 9e2bcd1d4ae9 |
@@ -14,3 +15,5 @@ Every fetched source, one row per seed, written at download time.
 | stanton-declaration-sentiments | Declaration of Sentiments | Elizabeth Cady Stanton | 1848 | wikisource | public-domain-pre1931 | 2026-09-15 | cee2f7237f30 |
 | swift-modest-proposal | A Modest Proposal | Jonathan Swift | 1729 | gutenberg | public-domain-pre1931 | 2026-09-15 | c99823e64f2b |
 | thoreau-civil-disobedience | On the Duty of Civil Disobedience | Henry David Thoreau | 1849 | gutenberg | public-domain-pre1931 | 2026-09-15 | 28b00a18a7c1 |
+| truth-aint-i-a-woman | Ain't I a Woman? | Sojourner Truth | 1851 | wikisource | public-domain-pre1931 | 2026-09-15 | 053439453a5f |
+| washington-farewell | Washington's Farewell Address | George Washington | 1796 | wikisource | public-domain-pre1931 | 2026-09-15 | 23f4c05e7710 |

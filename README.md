@@ -56,6 +56,7 @@ Requires Python 3.10+. No API keys, no installs.
 python3 engine/engine.py fetch    --domain ela-writing   # pull everything seeded
 python3 engine/engine.py validate --domain ela-writing   # license gate + metrics
 python3 engine/engine.py report                          # coverage report
+python3 engine/engine.py gaps                            # measure the curriculum ladder
 ```
 
 Useful flags: `--band g11-12-ap-lang` (one grade band), `--only <seedId>`
@@ -145,6 +146,69 @@ a judge panel verifies quotations against, topic fact bullets, adapted
 instructional prose, a synthesis source, vocabulary terms) — so every pull
 already knows what it is *for*.
 
+## The curriculum ladder — G9 core → AP Lang 4 → AP Lang 5
+
+This is what makes the engine a *loop* rather than a downloader, the same way
+writing-engine is a loop rather than a grader: a spec is declared, coverage is
+measured against it, and the output is a ranked work list. The spec here is a
+four-rung grade-band ladder in `curriculum/`:
+
+```mermaid
+flowchart LR
+    G9["<b>g9-acc-core</b> · mapped<br/>16 skills, 3 strands<br/>exported from the live G9<br/>course's knowledge graph"] --> G10
+    G10["<b>g10-bridge</b> · proposed<br/>6 skills the AP bands need<br/>that G9 does not teach —<br/>computed, pending review"] --> G11
+    G11["<b>g11-ap-lang-4</b> · target<br/>the 8 AP Lang CED skill<br/>categories at the <b>4 profile</b><br/>(Row A always · Row B ≥ 3 · no Row C)"] --> G12
+    G12["<b>g12-ap-lang-5</b> · target<br/>same spine at the <b>5 profile</b><br/>(Row B 4/4 sustained ·<br/>Row C earned by design)"]
+```
+
+- **G9 is imported, not invented** — the band file is exported from the live
+  course's curriculum intelligence map (16 skills over evidence / reasoning /
+  analysis strands, with taught-in lessons and prerequisite edges).
+- **G10 is a diff, not a syllabus** — its six skills (full rhetorical
+  situation, multi-source synthesis, claim qualification/rebuttal, the timed
+  rhetorical-analysis essay form, source evaluation, period-prose stamina) are
+  exactly what the AP bands depend on that G9 never teaches. Status
+  `proposed`: a reviewer promotes or moves each one.
+- **G11 vs G12 is a bar, not new material** — both run the CED's eight skill
+  categories (Rhetorical Situation, Claims & Evidence, Reasoning &
+  Organization, Style — reading and writing each). The 4-profile is
+  reliability without sophistication; the 5-profile adds the three skills the
+  scored high samples actually reward: a sustained Row B ceiling, deliberately
+  earned Row C, and full-exam command. (Profiles are design targets on the
+  3-row FRQ rubric, not official cut scores.)
+
+`gaps` walks the ladder and reports two things: **dependency integrity**
+(every skill's dependencies must resolve at its own rung or below — an AP
+skill depending on something no band teaches is a broken ladder) and
+**content coverage** against each skill's declared needs. Real output from
+today's run (`reports/ladder-gaps-2026-09-15.md`, committed):
+
+```
+Ladder: g9-acc-core (16 skills, mapped) → g10-bridge (6, proposed)
+        → g11-ap-lang-4 (8, target) → g12-ap-lang-5 (3, target)
+
+✅ every dependsOn/prerequisite resolves at or below its own rung (33 skills, 4 bands)
+
+| band           | skill                       | needs               | have | gap |
+| g10-bridge     | synthesize-multiple-sources | 6 × synthesis_source |  0  | ❌ 6 |
+| g11-ap-lang-4  | cle-writing                 | 6 × synthesis_source |  0  | ❌ 6 |
+| g12-ap-lang-5  | sustain-row-b-ceiling       | 6 × synthesis_source |  0  | ❌ 6 |
+| g10-bridge     | evaluate-and-attribute-sources | 4 × synthesis_source | 0 | ❌ 4 |
+| g11-ap-lang-4  | reo-writing                 | 2 × instructional    |  1  | ❌ 1 |
+| ...            | (passages: covered ✅ — 12 in corpus)                        |
+
+6 open content gap(s), 24 source(s) short in total.
+```
+
+The verdict is honest and specific: the public-domain canon already covers
+the **passage** needs of every rung, and the one structural deficit is
+**synthesis source sets** — short paired informational sources (including
+visuals) that no rung can currently practice on. That is the next seeding
+target, and federal data sources (charts, agency reports) are public domain,
+so it is an acquisition problem, not a licensing one. G9's own assessment
+gaps (skills taught but never measured) are tracked by the consuming app's
+audit, not here — the two reports meet at the same review queue.
+
 ## The license gate (plain-English)
 
 The whole point of the engine is that this table is enforced in code, not in
@@ -200,10 +264,11 @@ page can never silently masquerade as a trimmed transcript).
 ## Repository layout
 
 ```
-engine/engine.py     the whole engine: seeds → fetch → validate → report (stdlib only)
+engine/engine.py     the whole engine: seeds → fetch → validate → report → gaps (stdlib only)
+curriculum/          the grade-band ladder: g9-acc-core → g10-bridge → g11-ap-lang-4 → g12-ap-lang-5
 seeds/               per-domain, per-band manifests (the whitelist)
 validated/           sourced-text.v1 artifacts — text + provenance + metrics, unreviewed
-reports/             coverage reports per run
+reports/             coverage + ladder-gap reports per run
 provenance.jsonl     machine provenance rows, one per source
 provenance.md        the same table, human-readable, regenerated by the engine
 raw/                 original fetches (local only, gitignored)
@@ -221,9 +286,14 @@ raw/                 original fetches (local only, gitignored)
   plus trim markers is honest but crude; a page with unusual chrome needs a
   `textStart`/`textEnd` pair. Every artifact is unreviewed by design, so
   extraction defects are caught by the reviewer, not by students.
-- **One domain seeded so far** (`ela-writing / g11-12-ap-lang`, 10 sources).
-  The engine is domain-generic; the canon lists are the curation work, and
-  curating them is deliberately a human (subject-expert) task.
+- **One domain seeded so far** (`ela-writing`: 13 sources across the
+  `g11-12-ap-lang` and `g10-bridge` bands). The engine and the ladder format
+  are domain-generic; the canon lists and band files are the curation work,
+  and curating them is deliberately a human (subject-expert) task.
+- **The G10 bridge and the AP score profiles are unreviewed claims.** The
+  bridge band is a computed diff marked `proposed`; the 4/5 profiles are
+  design targets on the 3-row rubric, not official cut scores. Both need a
+  learning-science pass before content is commissioned against them.
 - **Readability is Flesch-Kincaid** via a syllable heuristic — a leveling
   *signal* for reviewers, not a claim.
 
