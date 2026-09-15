@@ -446,6 +446,9 @@ def cmd_validate(seeds: list[dict]) -> int:
             "targetUse": seed["targetUse"],
             "skills": seed["skills"],
             "landingShapes": seed["landingShapes"],
+            # Synthesis sources come in topic-clustered SETS (one FRQ = one
+            # topic, 6-7 sources); the set id is how a set is reassembled.
+            **({"sourceSet": seed["sourceSet"]} if seed.get("sourceSet") else {}),
             "provenance": {
                 "source": seed["source"], "sourceRef": seed["sourceRef"],
                 "urlUsed": fetch_record["urlUsed"], "sha256": fetch_record["sha256"],

@@ -9,11 +9,20 @@ Every fetched source, one row per seed, written at download time.
 | douglass-what-to-the-slave | What to the Slave Is the Fourth of July? | Frederick Douglass | 1852 | wikisource | public-domain-pre1931 | 2026-09-15 | b74fc0704e5c |
 | dubois-souls | The Souls of Black Folk | W. E. B. Du Bois | 1903 | gutenberg | public-domain-pre1931 | 2026-09-15 | 9e2bcd1d4ae9 |
 | eisenhower-farewell | Farewell Address | Dwight D. Eisenhower | 1961 | url | public-domain-us-gov | 2026-09-15 | 0fbb5f6e500f |
+| homestead-act | Homestead Act | 37th United States Congress | 1862 | url | public-domain-pre1931 | 2026-09-15 | 3d40b56abdb9 |
 | kennedy-inaugural | Inaugural Address | John F. Kennedy | 1961 | url | public-domain-us-gov | 2026-09-15 | b33ae55d7abe |
 | lincoln-second-inaugural | Second Inaugural Address | Abraham Lincoln | 1865 | wikisource | public-domain-pre1931 | 2026-09-15 | 29ee3a78861b |
+| muir-national-parks | Our National Parks | John Muir | 1901 | gutenberg | public-domain-pre1931 | 2026-09-15 | cefdc34ec081 |
+| nps-history | History of the National Park Service (overview) | National Park Service | None | url | public-domain-us-gov | 2026-09-15 | 4673ac5454bc |
+| nps-organic-act | National Park Service Organic Act | 64th United States Congress | 1916 | wikisource | public-domain-pre1931 | 2026-09-15 | 24688c3245e0 |
+| nps-visitation-numbers | National Park Service visitation numbers | National Park Service | None | url | public-domain-us-gov | 2026-09-15 | fd20c0aa5a1c |
+| openstax-wgwh-argumentative-research-intro | Writing Guide with Handbook — Ch. 12 Introduction (Argumentative Research) | OpenStax | 2021 | url | cc-by-4.0 | 2026-09-15 | 400d515c27c6 |
+| openstax-wgwh-research-process-intro | Writing Guide with Handbook — Ch. 13 Introduction (Research Process) | OpenStax | 2021 | url | cc-by-4.0 | 2026-09-15 | 22cc0d310311 |
 | openstax-wgwh-rhetorical-analysis-intro | Writing Guide with Handbook — Ch. 11 Introduction (Rhetorical Analysis) | OpenStax | 2021 | url | cc-by-4.0 | 2026-09-15 | e4999963b16a |
 | stanton-declaration-sentiments | Declaration of Sentiments | Elizabeth Cady Stanton | 1848 | wikisource | public-domain-pre1931 | 2026-09-15 | cee2f7237f30 |
 | swift-modest-proposal | A Modest Proposal | Jonathan Swift | 1729 | gutenberg | public-domain-pre1931 | 2026-09-15 | c99823e64f2b |
 | thoreau-civil-disobedience | On the Duty of Civil Disobedience | Henry David Thoreau | 1849 | gutenberg | public-domain-pre1931 | 2026-09-15 | 28b00a18a7c1 |
+| tr-seventh-annual-message | Seventh Annual Message (conservation as national duty) | Theodore Roosevelt | 1907 | wikisource | public-domain-pre1931 | 2026-09-15 | bbeee88cd7ac |
 | truth-aint-i-a-woman | Ain't I a Woman? | Sojourner Truth | 1851 | wikisource | public-domain-pre1931 | 2026-09-15 | 053439453a5f |
 | washington-farewell | Washington's Farewell Address | George Washington | 1796 | wikisource | public-domain-pre1931 | 2026-09-15 | 23f4c05e7710 |
+| yellowstone-protection-act | Yellowstone National Park Protection Act | 42nd United States Congress | 1872 | wikisource | public-domain-pre1931 | 2026-09-15 | 7272b2bb82ad |

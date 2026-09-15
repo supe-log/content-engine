@@ -180,34 +180,51 @@ flowchart LR
 `gaps` walks the ladder and reports two things: **dependency integrity**
 (every skill's dependencies must resolve at its own rung or below — an AP
 skill depending on something no band teaches is a broken ladder) and
-**content coverage** against each skill's declared needs. Real output from
-today's run (`reports/ladder-gaps-2026-09-15.md`, committed):
+**content coverage** against each skill's declared needs. The loop has
+already run once, gap to closure, all on 2026-09-15:
+
+**First measurement** (13 sources in corpus): dependency integrity clean, the
+passage needs of every rung covered, and one structural deficit —
+**synthesis source sets**, 0 on hand against needs at G10, G11 *and* G12:
+
+```
+| g10-bridge     | synthesize-multiple-sources    | 6 × synthesis_source | 0 | ❌ 6 |
+| g11-ap-lang-4  | cle-writing                    | 6 × synthesis_source | 0 | ❌ 6 |
+| g12-ap-lang-5  | sustain-row-b-ceiling          | 6 × synthesis_source | 0 | ❌ 6 |
+| g10-bridge     | evaluate-and-attribute-sources | 4 × synthesis_source | 0 | ❌ 4 |
+6 open content gap(s), 24 source(s) short in total.
+```
+
+**The response** was a topic-clustered set — because a synthesis FRQ is one
+debatable topic with 6–7 short sources on different sides, sources cluster
+under a `sourceSet` id. Set `public-lands` ("preserve or put to use?"):
+Muir's *Our National Parks* (1901) and TR's 1907 conservation message for
+preservation, the Homestead Act (1862) as the land-use counterposition, the
+Yellowstone (1872) and NPS Organic (1916) Acts as the statutes, and two
+modern NPS pages — an overview and the visitation-numbers data page — as the
+informational/data sources. All public domain. Plus two more CC BY OpenStax
+chapters for the writing-side instructional needs.
+
+**Second measurement** (22 sources, `reports/ladder-gaps-2026-09-15.md`):
 
 ```
 Ladder: g9-acc-core (16 skills, mapped) → g10-bridge (6, proposed)
         → g11-ap-lang-4 (8, target) → g12-ap-lang-5 (3, target)
 
 ✅ every dependsOn/prerequisite resolves at or below its own rung (33 skills, 4 bands)
-
-| band           | skill                       | needs               | have | gap |
-| g10-bridge     | synthesize-multiple-sources | 6 × synthesis_source |  0  | ❌ 6 |
-| g11-ap-lang-4  | cle-writing                 | 6 × synthesis_source |  0  | ❌ 6 |
-| g12-ap-lang-5  | sustain-row-b-ceiling       | 6 × synthesis_source |  0  | ❌ 6 |
-| g10-bridge     | evaluate-and-attribute-sources | 4 × synthesis_source | 0 | ❌ 4 |
-| g11-ap-lang-4  | reo-writing                 | 2 × instructional    |  1  | ❌ 1 |
-| ...            | (passages: covered ✅ — 12 in corpus)                        |
-
-6 open content gap(s), 24 source(s) short in total.
+| g10-bridge     | synthesize-multiple-sources | 6 × synthesis_source | 7 | ✅ 0 |
+| g11-ap-lang-4  | cle-writing                 | 6 × synthesis_source | 7 | ✅ 0 |
+| g12-ap-lang-5  | sustain-row-b-ceiling       | 6 × synthesis_source | 7 | ✅ 0 |
+...
+0 open content gap(s), 0 source(s) short in total.
 ```
 
-The verdict is honest and specific: the public-domain canon already covers
-the **passage** needs of every rung, and the one structural deficit is
-**synthesis source sets** — short paired informational sources (including
-visuals) that no rung can currently practice on. That is the next seeding
-target, and federal data sources (charts, agency reports) are public domain,
-so it is an acquisition problem, not a licensing one. G9's own assessment
-gaps (skills taught but never measured) are tracked by the consuming app's
-audit, not here — the two reports meet at the same review queue.
+A green board means **sourcing** is no longer the constraint — it does not
+mean the content work is done: long sources still need excerpting, the set
+needs a visual source, and every artifact is still `unreviewed`. G9's own
+assessment gaps (skills taught but never measured) are tracked by the
+consuming app's audit, not here — the two reports meet at the same review
+queue.
 
 ## The license gate (plain-English)
 
@@ -249,9 +266,11 @@ One JSON object per line in `seeds/<domain>/<band>.jsonl`:
 
 Adding a grade band or a whole new domain is a new manifest file — the engine
 is generic. Optional per-seed fields: `attribution` (required for CC BY),
-`textStart` / `textEnd` (human-set trim markers for pages whose site chrome
-survives extraction; a marker that fails to match is a hard error, so a full
-page can never silently masquerade as a trimmed transcript).
+`sourceSet` (clusters synthesis sources into one topic set, e.g.
+`public-lands`), and `textStart` / `textEnd` (human-set trim markers for
+pages whose site chrome survives extraction; a marker that fails to match is
+a hard error, so a full page can never silently masquerade as a trimmed
+transcript).
 
 ### Source adapters (and the traps already hit)
 
@@ -286,10 +305,13 @@ raw/                 original fetches (local only, gitignored)
   plus trim markers is honest but crude; a page with unusual chrome needs a
   `textStart`/`textEnd` pair. Every artifact is unreviewed by design, so
   extraction defects are caught by the reviewer, not by students.
-- **One domain seeded so far** (`ela-writing`: 13 sources across the
-  `g11-12-ap-lang` and `g10-bridge` bands). The engine and the ladder format
-  are domain-generic; the canon lists and band files are the curation work,
-  and curating them is deliberately a human (subject-expert) task.
+- **One domain seeded so far** (`ela-writing`: 22 sources across three
+  manifests, including the `public-lands` synthesis set). The engine and the
+  ladder format are domain-generic; the canon lists and band files are the
+  curation work, and curating them is deliberately a human (subject-expert)
+  task. The synthesis set still needs a true **visual** source (a chart or
+  image) — the artifact schema is text-only today, and the NPS data page
+  stands in for it.
 - **The G10 bridge and the AP score profiles are unreviewed claims.** The
   bridge band is a computed diff marked `proposed`; the 4/5 profiles are
   design targets on the 3-row rubric, not official cut scores. Both need a

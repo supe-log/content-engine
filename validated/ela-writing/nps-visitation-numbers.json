@@ -1,0 +1,37 @@
+{
+  "schema": "sourced-text.v1",
+  "seedId": "nps-visitation-numbers",
+  "title": "National Park Service visitation numbers",
+  "author": "National Park Service",
+  "year": null,
+  "domain": "ela-writing",
+  "gradeBand": "g10-12-synthesis",
+  "targetUse": "synthesis_source",
+  "skills": [
+    "synthesis"
+  ],
+  "landingShapes": [
+    "synthesis_source"
+  ],
+  "sourceSet": "public-lands",
+  "provenance": {
+    "source": "url",
+    "sourceRef": "https://www.nps.gov/aboutus/visitation-numbers.htm",
+    "urlUsed": "https://www.nps.gov/aboutus/visitation-numbers.htm",
+    "sha256": "fd20c0aa5a1c8d4cc5c45a7cc8d6810562ce013f2cf74948f8cae430669818f3",
+    "retrievedAt": "2026-09-15T18:13:26Z",
+    "license": "public-domain-us-gov",
+    "licenseRationale": "US federal work (NPS), 17 USC 105"
+  },
+  "metrics": {
+    "wordCount": 419,
+    "sentenceCount": 8,
+    "fleschKincaidGrade": 20.7,
+    "replacementChars": 0,
+    "excerptRequired": false
+  },
+  "text": "Visitation Numbers (U.S. National Park Service)\n\nSkip to global NPS navigation\n\nSkip to the main content\n\nSkip to the footer section\n\nNational Park Service\n\nSearch\n\nExiting nps.gov\n\nAbout Us\n\nContact Us\n\nVisitation Numbers\n\nThe National Park Service's Social Science Program coordinates the collection of visitor use statistics for more than 400 national parks throughout the year. Official statistics are traditionally reported during the first few months of a new year. Learn more about visitation statistics collection and find official reports by the National Park Service. Use the NPS Stats database to find national summaries, additional data and reports for individual parks, and data for past years.\n\nResources\n\nScience of Visitation\n\nLearn more about how the National Park Service conducts studies and analyzes visitation numbers.\n\nAnnual Visitation Trends\n\nFind quick highlights of recreational visits to national parks from the previous calendar year.\n\nIRMA Stats Database\n\nUse the database to crunch numbers and run reports on various visitation-related statistics.\n\nRecreation Visits by Year\n\n1904\n\n120,690\n\n1930\n\n3,038,935\n\n1956\n\n53,872,100\n\n1982\n\n244,924,579\n\n2008\n\n274,852,949\n\n1905\n\n140,954\n\n1931\n\n3,217,674\n\n1957\n\n58,220,600\n\n1983\n\n243.619.396\n\n2009\n\n285,579,941\n\n1906\n\n30,569\n\n1932\n\n3,551,885\n\n1958\n\n58,466,800\n\n1984\n\n248.785.509\n\n2010\n\n281,303,769\n\n1907\n\n32,935\n\n1933\n\n3,255,684\n\n1959\n\n62,834,000\n\n1985\n\n263.441.808\n\n2011\n\n278,939,216\n\n1908\n\n42,768\n\n1934\n\n6,095,201\n\n1960\n\n71,586,000\n\n1986\n\n281,094,850\n\n2012\n\n282,765,682\n\n1909\n\n60,899\n\n1935\n\n7,435,659\n\n1961\n\n78,933,900\n\n1987\n\n287,244,998\n\n2013\n\n273,630,895\n\n1910\n\n173,416\n\n1936\n\n11,749,790\n\n1962\n\n88,548,300\n\n1988\n\n282,451,441\n\n2014\n\n292,800,082\n\n1911\n\n194,207\n\n1937\n\n14,838,640\n\n1963\n\n101,959,800\n\n1989\n\n269,399,837\n\n2015\n\n307,247,252\n\n1912\n\n198,334\n\n1938\n\n16,019,483\n\n1964\n\n109,190,300\n\n1990\n\n255,581,467\n\n2016\n\n330,971,689\n\n1913\n\n216,853\n\n1939\n\n15,141,032\n\n1965\n\n118,662,500\n\n1991\n\n267,840,999\n\n2017\n\n330,882,751\n\n1914\n\n209,693\n\n1940\n\n16,410,148\n\n1966\n\n129,282,100\n\n1992\n\n274,694,549\n\n2018\n\n318,211,833\n\n1915\n\n314,299\n\n1941\n\n20,487,633\n\n1967\n\n135,414,200\n\n1993\n\n273,120,925\n\n2019\n\n327,516,619\n\n1916\n\n326,506\n\n1942\n\n8,891,495\n\n1968\n\n145,449,500\n\n1994\n\n268,636,169\n\n2020\n\n237,064,332\n\n1917\n\n453,498\n\n1943\n\n6,383,513\n\n1969\n\n159,103,500\n\n1995\n\n269,564,307\n\n2021\n\n297,115,406\n\n1918\n\n436,222\n\n1944\n\n7,723,790\n\n1970\n\n168,135,100\n\n1996\n\n265,796,163\n\n2022\n\n311,985,998\n\n1919\n\n781,178\n\n1945\n\n10,855,548\n\n1971\n\n151,265,400\n\n1997\n\n275,236,335\n\n2023\n\n325,498,646\n\n1920\n\n1,022,091\n\n1946\n\n20,918,012\n\n1972\n\n163,156,569\n\n1998\n\n286,762,265\n\n2024\n\n331,863,358\n\n1921\n\n1,101,697\n\n1947\n\n24,258,527\n\n1973\n\n166,572,300\n\n1999\n\n287,130,879\n\nTotal\n\n16,360,673,970\n\n1922\n\n1,136,949\n\n1948\n\n26,294,795\n\n1974\n\n168,686,500\n\n2000\n\n285,891,275\n\n\n\n\n\n1923\n\n1,364,024\n\n1949\n\n29,124,837\n\n1975\n\n188,085,700\n\n2001\n\n279,873,926\n\n\n\n\n\n1924\n\n1,527,999\n\n1950\n\n32,706,172\n\n1976\n\n215,359,800\n\n2002\n\n227,299,880\n\n\n\n\n\n1925\n\n1,900,499\n\n1951\n\n36,613,178\n\n1977\n\n209,370,600\n\n2003\n\n266,230,290\n\n\n\n\n\n1926\n\n2,162,640\n\n1952\n\n41,804,313\n\n1978\n\n221,127,705\n\n2004\n\n276,908,337\n\n\n\n\n\n1927\n\n2,465,058\n\n1953\n\n45,679,754\n\n1979\n\n205,369,795\n\n2005\n\n273,488,751\n\n\n\n\n\n1928\n\n2,703,753\n\n1954\n\n47,967,800\n\n1980\n\n220,463,211\n\n2006\n\n272,623,980\n\n\n\n\n\n1929\n\n3,010,912\n\n1955\n\n48,891,000\n\n1981\n\n238,592,669\n\n2007\n\n275,581,547\n\n\n\n\n\nLast updated: March 5, 2025\n\nPark footer\n\nContact Info\n\nContact Us\n\nTools\n\nStay Connected",
+  "review": {
+    "status": "unreviewed"
+  }
+}

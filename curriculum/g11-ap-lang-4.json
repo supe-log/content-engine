@@ -3,8 +3,8 @@
   "bandId": "g11-ap-lang-4",
   "gradeBand": "g11",
   "ladderIndex": 2,
-  "title": "Grade 11 — AP Lang, optimized for a 4",
-  "spine": "AP English Language CED — the eight skill categories (four Big Ideas x reading/writing)",
+  "title": "Grade 11 \u2014 AP Lang, optimized for a 4",
+  "spine": "AP English Language CED \u2014 the eight skill categories (four Big Ideas x reading/writing)",
   "status": "target",
   "scoreProfile": {
     "target": "AP Lang 4 profile",
@@ -12,7 +12,11 @@
     "rowA_thesis": "1, every FRQ, every time",
     "rowB_evidenceCommentary": ">= 3 of 4, sustained across all three FRQ types",
     "rowC_sophistication": "not required",
-    "frqTypes": ["synthesis", "rhetorical_analysis", "argument"]
+    "frqTypes": [
+      "synthesis",
+      "rhetorical_analysis",
+      "argument"
+    ]
   },
   "provenance": {
     "source": "AP English Language and Composition CED skill categories (College Board framework; skill taxonomy used as alignment facts, no CB text reproduced)",
@@ -24,72 +28,162 @@
       "title": "Explain how writers' choices respond to the rhetorical situation (reading)",
       "strand": "rhetorical-situation",
       "grain": "recognition",
-      "dependsOn": ["analyze-rhetorical-situation", "apply-everything-is-a-choice", "name-an-author-choice-type"],
-      "contentTags": ["rhetorical-analysis"],
-      "contentNeeds": [{"targetUse": "passage", "minSources": 6}]
+      "dependsOn": [
+        "analyze-rhetorical-situation",
+        "apply-everything-is-a-choice",
+        "name-an-author-choice-type"
+      ],
+      "contentTags": [
+        "rhetorical-analysis"
+      ],
+      "contentNeeds": [
+        {
+          "targetUse": "passage",
+          "minSources": 6
+        }
+      ]
     },
     {
       "skillId": "rhs-writing",
       "title": "Make strategic choices in response to a rhetorical situation (writing)",
       "strand": "rhetorical-situation",
       "grain": "production",
-      "dependsOn": ["analyze-rhetorical-situation", "write-analytical-paragraph"],
-      "contentTags": ["rhetorical-analysis"],
-      "contentNeeds": [{"targetUse": "instructional", "minSources": 2}]
+      "dependsOn": [
+        "analyze-rhetorical-situation",
+        "write-analytical-paragraph"
+      ],
+      "contentTags": [
+        "rhetorical-analysis",
+        "argument"
+      ],
+      "contentNeeds": [
+        {
+          "targetUse": "instructional",
+          "minSources": 2
+        }
+      ]
     },
     {
       "skillId": "cle-reading",
       "title": "Identify and describe claims and the evidence behind them (reading)",
       "strand": "claims-evidence",
       "grain": "recognition",
-      "dependsOn": ["tell-evidence-from-reasoning", "tell-evidence-from-commentary", "evaluate-and-attribute-sources"],
-      "contentTags": ["argument", "synthesis"],
-      "contentNeeds": [{"targetUse": "passage", "minSources": 4}]
+      "dependsOn": [
+        "tell-evidence-from-reasoning",
+        "tell-evidence-from-commentary",
+        "evaluate-and-attribute-sources"
+      ],
+      "contentTags": [
+        "argument",
+        "synthesis"
+      ],
+      "contentNeeds": [
+        {
+          "targetUse": "passage",
+          "minSources": 4
+        }
+      ]
     },
     {
       "skillId": "cle-writing",
       "title": "Develop defensible claims backed by selected, attributed evidence (writing)",
       "strand": "claims-evidence",
       "grain": "production",
-      "dependsOn": ["write-attributed-evidence-sentence", "qualify-and-rebut-claims", "synthesize-multiple-sources"],
-      "contentTags": ["argument", "synthesis"],
-      "contentNeeds": [{"targetUse": "synthesis_source", "minSources": 6}]
+      "dependsOn": [
+        "write-attributed-evidence-sentence",
+        "qualify-and-rebut-claims",
+        "synthesize-multiple-sources"
+      ],
+      "contentTags": [
+        "argument",
+        "synthesis"
+      ],
+      "contentNeeds": [
+        {
+          "targetUse": "synthesis_source",
+          "minSources": 6
+        }
+      ]
     },
     {
       "skillId": "reo-reading",
       "title": "Describe a text's line of reasoning and how its organization carries it (reading)",
       "strand": "reasoning-organization",
       "grain": "recognition",
-      "dependsOn": ["order-evidence-and-commentary", "tell-analysis-from-summary"],
-      "contentTags": ["rhetorical-analysis", "argument"],
-      "contentNeeds": [{"targetUse": "passage", "minSources": 4}]
+      "dependsOn": [
+        "order-evidence-and-commentary",
+        "tell-analysis-from-summary"
+      ],
+      "contentTags": [
+        "rhetorical-analysis",
+        "argument"
+      ],
+      "contentNeeds": [
+        {
+          "targetUse": "passage",
+          "minSources": 4
+        }
+      ]
     },
     {
       "skillId": "reo-writing",
       "title": "Develop and organize a line of reasoning using methods of development (writing)",
       "strand": "reasoning-organization",
       "grain": "production",
-      "dependsOn": ["order-evidence-and-commentary", "write-rhetorical-analysis-essay"],
-      "contentTags": ["rhetorical-analysis"],
-      "contentNeeds": [{"targetUse": "instructional", "minSources": 2}]
+      "dependsOn": [
+        "order-evidence-and-commentary",
+        "write-rhetorical-analysis-essay"
+      ],
+      "contentTags": [
+        "rhetorical-analysis",
+        "argument"
+      ],
+      "contentNeeds": [
+        {
+          "targetUse": "instructional",
+          "minSources": 2
+        }
+      ]
     },
     {
       "skillId": "stl-reading",
       "title": "Explain how word choice and syntax contribute to meaning and effect (reading)",
       "strand": "style",
       "grain": "recognition",
-      "dependsOn": ["name-an-author-choice-type", "distinguish-sfe-levels", "read-complex-period-prose"],
-      "contentTags": ["rhetorical-analysis", "satire-irony"],
-      "contentNeeds": [{"targetUse": "passage", "minSources": 5}]
+      "dependsOn": [
+        "name-an-author-choice-type",
+        "distinguish-sfe-levels",
+        "read-complex-period-prose"
+      ],
+      "contentTags": [
+        "rhetorical-analysis",
+        "satire-irony"
+      ],
+      "contentNeeds": [
+        {
+          "targetUse": "passage",
+          "minSources": 5
+        }
+      ]
     },
     {
       "skillId": "stl-writing",
-      "title": "Make strategic stylistic choices — diction and syntax — in service of the argument (writing)",
+      "title": "Make strategic stylistic choices \u2014 diction and syntax \u2014 in service of the argument (writing)",
       "strand": "style",
       "grain": "production",
-      "dependsOn": ["write-sfe-chain", "write-commentary-that-reaches-effect"],
-      "contentTags": ["rhetorical-analysis"],
-      "contentNeeds": [{"targetUse": "instructional", "minSources": 1}]
+      "dependsOn": [
+        "write-sfe-chain",
+        "write-commentary-that-reaches-effect"
+      ],
+      "contentTags": [
+        "rhetorical-analysis"
+      ],
+      "contentNeeds": [
+        {
+          "targetUse": "instructional",
+          "minSources": 1
+        }
+      ]
     }
   ]
 }

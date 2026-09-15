@@ -1,0 +1,38 @@
+{
+  "schema": "sourced-text.v1",
+  "seedId": "yellowstone-protection-act",
+  "title": "Yellowstone National Park Protection Act",
+  "author": "42nd United States Congress",
+  "year": 1872,
+  "domain": "ela-writing",
+  "gradeBand": "g10-12-synthesis",
+  "targetUse": "synthesis_source",
+  "skills": [
+    "synthesis"
+  ],
+  "landingShapes": [
+    "synthesis_source",
+    "source_texts"
+  ],
+  "sourceSet": "public-lands",
+  "provenance": {
+    "source": "wikisource",
+    "sourceRef": "Yellowstone National Park Protection Act",
+    "urlUsed": "https://en.wikisource.org/wiki/Yellowstone_National_Park_Protection_Act",
+    "sha256": "7272b2bb82adcd2af42426a7918db7e8a06598dd7cabd25ae4c00333d0665974",
+    "retrievedAt": "2026-09-15T18:13:22Z",
+    "license": "public-domain-pre1931",
+    "licenseRationale": "US statute, 1872; federal work and pre-1931"
+  },
+  "metrics": {
+    "wordCount": 547,
+    "sentenceCount": 12,
+    "fleschKincaidGrade": 21.5,
+    "replacementChars": 0,
+    "excerptRequired": false
+  },
+  "text": "Forty-Second Congress of the United States of America;\n\nAt the Second Session,\n\nBegun and held at the City of Washington on Monday, the Fourth day of December, one thousand eight hundred and seventy-one.\n\n\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\n\nAN ACT\n\nto set apart a certain tract of land lying near the head-waters of the Yellowstone River as a public park.\n\n\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\n\nBe it enacted by the Senate and House of Representatives of the United States of America in Congress assembled,\n\nThat the tract of land in the Territories of Montana and Wyoming, lying near the head-waters of the Yellowstone River, and described as follows, to wit, commencing at the junction of Gardiner's River with the Yellowstone River, and running east to the meridian passing ten miles to the eastward of the most eastern point of Yellowstone Lake; thence south along said meridian to the parallel of latitude passing ten miles south of the most southern point of Yellowstone Lake; thence west along said parallel to the meridian passing fifteen miles west of the most western point of Madison Lake; thence north along said meridian to the latitude of the junction of Yellowstone and Gardiner's Rivers; thence east to the place of beginning, is hereby reserved and withdrawn from settlement, occupancy, or sale under the laws of the United States, and dedicated and set apart as a public park or pleasuring-ground for the benefit and enjoyment of the people; and all persons who shall locate or settle upon or occupy the same, or any part thereof, except as hereinafter provided, shall be considered trespassers and removed therefrom.\n\nSec. 2 That said public park shall be under the exclusive control of the Secretary of the Interior, whose duty it shall be, as soon as practicable, to make and publish such rules and regulations as he may deem necessary or proper for the care and management of the same. Such regulations shall provide for the preservation, from injury or spoliation, of all timber, mineral deposits, natural curiosities, or wonders within said park, and their retention in their natural condition. The Secretary may in his discretion, grant leases for building purposes for terms not exceeding ten years, of small parcels of ground, at such places in said park as shall require the erection of buildings for the accommodation of visitors; all of the proceeds of said leases, and all other revenues that may be derived from any source connected with said park, to be expended under his direction in the management of the same, and the construction of roads and bridle-paths therein. He shall provide against the wanton destruction of the fish and game found within said park, and against their capture or destruction for the purposes of merchandise or profit. He shall also cause all persons trespassing upon the same after the passage of this act to be removed therefrom, and generally shall be authorized to take all such measures as shall be necessary or proper to fully carry out the objects and purposes of this act.\n\n(James G. Blaine)\n\nSpeaker of the U.S. House of Representatives\n\n(Schuyler Colfax)\n\nVice President of the United States\n\nand President of the Senate\n\nI certify that this act originated in the Senate\n\n(George Gorham)\n\nSecretary\n\nApproved March 1, 1872\n\n(Ulysses S. Grant)\n\nReferences and original text\n\nArchives.gov",
+  "review": {
+    "status": "unreviewed"
+  }
+}

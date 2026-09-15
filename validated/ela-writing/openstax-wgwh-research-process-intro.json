@@ -1,0 +1,37 @@
+{
+  "schema": "sourced-text.v1",
+  "seedId": "openstax-wgwh-research-process-intro",
+  "title": "Writing Guide with Handbook \u2014 Ch. 13 Introduction (Research Process)",
+  "author": "OpenStax",
+  "year": 2021,
+  "domain": "ela-writing",
+  "gradeBand": "g11-12-ap-lang",
+  "targetUse": "instructional",
+  "skills": [
+    "synthesis"
+  ],
+  "landingShapes": [
+    "instructional_prose"
+  ],
+  "provenance": {
+    "source": "url",
+    "sourceRef": "https://openstax.org/books/writing-guide/pages/13-introduction",
+    "urlUsed": "https://openstax.org/books/writing-guide/pages/13-introduction",
+    "sha256": "22cc0d310311d669eccaf36651389fb1712ff2312ed1dc6d3d5c2aab719fd48c",
+    "retrievedAt": "2026-09-15T18:13:29Z",
+    "license": "cc-by-4.0",
+    "licenseRationale": "OpenStax Writing Guide with Handbook is CC BY 4.0",
+    "attribution": "Adapted from OpenStax, Writing Guide with Handbook (Rice University), licensed under CC BY 4.0. openstax.org/books/writing-guide"
+  },
+  "metrics": {
+    "wordCount": 563,
+    "sentenceCount": 21,
+    "fleschKincaidGrade": 17.1,
+    "replacementChars": 0,
+    "excerptRequired": false
+  },
+  "text": "Ch. 13 Introduction - Writing Guide with Handbook | OpenStax\nSkip to ContentGo to accessibility page\n\nWriting Guide with Handbook\nIntroduction\n\nWriting Guide with HandbookIntroduction\n\n\n\nFigure\n13.1\n\n\nIn the research process, you may have to conduct fieldwork to collect primary data. In this photograph, a military sergeant is interviewing an Iraqi police officer and entering the subject\u2019s answers into her computer. (credit: \u201cPetty Officer 1st Class\u201d by Jeremy L. Wood/Wikimedia Commons, Public Domain)\n\n\n\n\n\n\n\n\n\n\nChapter Outline\n\n\n\n\n13.1\n\nThe Research Process: Where to Look for Existing Sources\n\n\n\n13.2\n\nThe Research Process: How to Create Sources\n\n\n\n13.3\n\nGlance at the Research Process: Key Skills\n\n\n\n13.4\n\nAnnotated Student Sample: Research Log\n\n\n\n13.5\n\nResearch Process: Making Notes, Synthesizing Information, and Keeping a Research Log\n\n\n\n13.6\n\nSpotlight on \u2026 Ethical Research\n\n\n\n\n\nIntroduction\n\n\nIn every field, any claim you make about a debatable subject must be supported by evidence. To identify an unknown rock, for example, you scrape it with a known rock in the geology laboratory. The scratch marks of the harder rock on the softer rock will be part of your evidence to support your claims about the unknown rock. If you conduct a survey of students to examine college study habits, counting and collating your findings will provide evidence to support your conclusions. Although the nature of evidence varies from one discipline to another, the need for evidence is constant. Collecting accurate and current evidence to support your claim is a key part of research; without it, readers likely will judge you as uninformed and your work as unconvincing. Equally constant is the need to have complete and accurate documentation for these sources. While not all research is done for academic purposes\u2014you may conduct research when choosing a new piece of technology, deciding on a movie to watch, renting an apartment, or even choosing a career path\u2014the research discussed in this chapter is academic related. You will learn about generating research support materials by doing library research, conducting fieldwork, taking notes, organizing sources, and keeping a detailed and accurate research log.\n\n\n\n\n\nPreviousNext\n\nOrder a print copy\n\nCitation/Attribution\n\nThis book may not be used in the training of large language models or otherwise be ingested into large language models or generative AI offerings without OpenStax's permission.\n\nWant to cite, share, or modify this book? This book uses the\n\nCreative Commons Attribution-NonCommercial-ShareAlike License\nand you must attribute OpenStax.\n\nAttribution information\n\n\n\nIf you are redistributing all or part of this book in a print format,\nthen you must include on every physical page the following attribution:\n\n\nAccess for free at https://openstax.org/books/writing-guide/pages/1-unit-introduction\n\n\n\n\n\n\nIf you are redistributing all or part of this book in a digital format,\nthen you must include on every digital page view the following attribution:\n\n\nAccess for free at https://openstax.org/books/writing-guide/pages/1-unit-introduction\n\n\n\n\nCitation information\n\n\n\nUse the information below to generate a citation. We recommend using a\ncitation tool such as\nthis one.\n\n\n\nAuthors: Michelle Bachelor Robinson, Maria Jerskey, featuring Toby Fulwiler\n\n\n\n\nPublisher/website: OpenStax\n\n\n\n\nBook title: Writing Guide with Handbook\n\n\n\n\nPublication date: Dec 21, 2021\n\n\n\n\nLocation: Houston, Texas\n\n\n\n\nBook URL: https://openstax.org/books/writing-guide/pages/1-unit-introduction\n\n\n\n\nSection URL: https://openstax.org/books/writing-guide/pages/13-introduction\n\n\n\n\n\n\u00a9 Apr 23, 2026 OpenStax. Textbook content produced by OpenStax is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike License . The OpenStax name, OpenStax logo, OpenStax book covers, OpenStax CNX name, and OpenStax CNX logo\nare not subject to the Creative Commons license and may not be reproduced without the prior and express written\nconsent of Rice University.",
+  "review": {
+    "status": "unreviewed"
+  }
+}
