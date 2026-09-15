@@ -1,0 +1,37 @@
+{
+  "schema": "sourced-text.v1",
+  "seedId": "openstax-wgwh-rhetorical-analysis-intro",
+  "title": "Writing Guide with Handbook \u2014 Ch. 11 Introduction (Rhetorical Analysis)",
+  "author": "OpenStax",
+  "year": 2021,
+  "domain": "ela-writing",
+  "gradeBand": "g11-12-ap-lang",
+  "targetUse": "instructional",
+  "skills": [
+    "rhetorical-analysis"
+  ],
+  "landingShapes": [
+    "instructional_prose"
+  ],
+  "provenance": {
+    "source": "url",
+    "sourceRef": "https://openstax.org/books/writing-guide/pages/11-introduction",
+    "urlUsed": "https://openstax.org/books/writing-guide/pages/11-introduction",
+    "sha256": "e4999963b16aecd3cdd297c29a2d3fe3a2e646841f46c731a8318e037ded01c8",
+    "retrievedAt": "2026-09-15T15:59:21Z",
+    "license": "cc-by-4.0",
+    "licenseRationale": "OpenStax Writing Guide with Handbook is CC BY 4.0",
+    "attribution": "Adapted from OpenStax, Writing Guide with Handbook (Rice University), licensed under CC BY 4.0. openstax.org/books/writing-guide"
+  },
+  "metrics": {
+    "wordCount": 604,
+    "sentenceCount": 26,
+    "fleschKincaidGrade": 15.6,
+    "replacementChars": 0,
+    "excerptRequired": false
+  },
+  "text": "Ch. 11 Introduction - Writing Guide with Handbook | OpenStax\nSkip to ContentGo to accessibility page\n\nWriting Guide with Handbook\nIntroduction\n\nWriting Guide with HandbookIntroduction\n\n\n\nFigure\n11.1\n\n\nThroughout their college careers and beyond, students use a number of different reasoning strategies in academic and professional writing. (credit: \u201cHoward Tilton Library Computers 2010\u201d by Tulane Public Relations/Wikimedia Commons, CC BY 2.0)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nChapter Outline\n\n\n\n\n11.1\n\nDeveloping Your Sense of Logic\n\n\n\n11.2\n\nReasoning Trailblazer: Paul D. N. Hebert\n\n\n\n11.3\n\nGlance at Genre: Reasoning Strategies and Signal Words\n\n\n\n11.4\n\nAnnotated Sample Reading: from Book VII of The Republic by Plato\n\n\n\n11.5\n\nWriting Process: Reasoning Supported by Evidence\n\n\n\n\n\nIntroduction\n\n\nThe ways in which you approach and discuss debatable topics incorporate critical thinking, critical reading, and critical writing. The reasoning strategies discussed in this chapter reflect the patterns people use to think critically and the structures with which writers and speakers commonly build their arguments. These strategies are also the ones you will use in most of your college writing projects, including your assignments for Position Argument: Practicing the Art of Rhetoric and Argumentative Research: Enhancing the Art of Rhetoric with Evidence. Each strategy is a building block of logic; that is, each is built on a pattern of thought, which you use out of the classroom as well. For instance, you might approach a text or real-life situation in some of the following ways:\n\n\nExplain it in terms of something unrelated but more familiar.\n\n\nCompare or contrast it with other texts or situations.\n\n\nGroup it in a category with similar texts or situations.\n\n\nConsider it as a problem that needs to be solved.\n\n\nExamine the reasons something happens or what happens as a result.\n\n\nExplain what the text or situation means to you.\n\n\nThese thought patterns exemplify active critical thinking, which translates into critical writing. In other words, writing patterns reflect thinking patterns. By applying these reasoning patterns appropriately and effectively, you will be able to incorporate the evidence you need to support a thesis and persuade readers of the validity of your argument. Remember, too, that these are skills, and like other skills, the more you practice, the better you will get at using them effectively. (You can read more about argument and logic in Rhetorical Analysis: Interpreting the Art of Rhetoric.)\n\n\n\n\n\nPreviousNext\n\nOrder a print copy\n\nCitation/Attribution\n\nThis book may not be used in the training of large language models or otherwise be ingested into large language models or generative AI offerings without OpenStax's permission.\n\nWant to cite, share, or modify this book? This book uses the\n\nCreative Commons Attribution-NonCommercial-ShareAlike License\nand you must attribute OpenStax.\n\nAttribution information\n\n\n\nIf you are redistributing all or part of this book in a print format,\nthen you must include on every physical page the following attribution:\n\n\nAccess for free at https://openstax.org/books/writing-guide/pages/1-unit-introduction\n\n\n\n\n\n\nIf you are redistributing all or part of this book in a digital format,\nthen you must include on every digital page view the following attribution:\n\n\nAccess for free at https://openstax.org/books/writing-guide/pages/1-unit-introduction\n\n\n\n\nCitation information\n\n\n\nUse the information below to generate a citation. We recommend using a\ncitation tool such as\nthis one.\n\n\n\nAuthors: Michelle Bachelor Robinson, Maria Jerskey, featuring Toby Fulwiler\n\n\n\n\nPublisher/website: OpenStax\n\n\n\n\nBook title: Writing Guide with Handbook\n\n\n\n\nPublication date: Dec 21, 2021\n\n\n\n\nLocation: Houston, Texas\n\n\n\n\nBook URL: https://openstax.org/books/writing-guide/pages/1-unit-introduction\n\n\n\n\nSection URL: https://openstax.org/books/writing-guide/pages/11-introduction\n\n\n\n\n\n\u00a9 Apr 23, 2026 OpenStax. Textbook content produced by OpenStax is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike License . The OpenStax name, OpenStax logo, OpenStax book covers, OpenStax CNX name, and OpenStax CNX logo\nare not subject to the Creative Commons license and may not be reproduced without the prior and express written\nconsent of Rice University.",
+  "review": {
+    "status": "unreviewed"
+  }
+}
