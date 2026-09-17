@@ -16,9 +16,12 @@ Every fetched source, one row per seed, written at download time.
 | nps-history | History of the National Park Service (overview) | National Park Service | None | url | public-domain-us-gov | 2026-09-15 | 4673ac5454bc |
 | nps-organic-act | National Park Service Organic Act | 64th United States Congress | 1916 | wikisource | public-domain-pre1931 | 2026-09-15 | 24688c3245e0 |
 | nps-visitation-numbers | National Park Service visitation numbers | National Park Service | None | url | public-domain-us-gov | 2026-09-15 | fd20c0aa5a1c |
+| obama-first-inaugural | First Inaugural Address | Barack Obama | 2009 | url | public-domain-us-gov | 2026-09-17 | 72529c048869 |
 | openstax-wgwh-argumentative-research-intro | Writing Guide with Handbook — Ch. 12 Introduction (Argumentative Research) | OpenStax | 2021 | url | cc-by-4.0 | 2026-09-15 | 400d515c27c6 |
 | openstax-wgwh-research-process-intro | Writing Guide with Handbook — Ch. 13 Introduction (Research Process) | OpenStax | 2021 | url | cc-by-4.0 | 2026-09-15 | 22cc0d310311 |
 | openstax-wgwh-rhetorical-analysis-intro | Writing Guide with Handbook — Ch. 11 Introduction (Rhetorical Analysis) | OpenStax | 2021 | url | cc-by-4.0 | 2026-09-15 | e4999963b16a |
+| owid-rise-of-social-media | The rise of social media | Esteban Ortiz-Ospina / Our World in Data | 2019 | url | cc-by-4.0 | 2026-09-17 | 1cadbfb5a745 |
+| reagan-challenger | Address to the Nation on the Explosion of the Space Shuttle Challenger | Ronald Reagan (speechwriter: Peggy Noonan, White House staff) | 1986 | url | public-domain-us-gov | 2026-09-17 | fff8fdf41783 |
 | stanton-declaration-sentiments | Declaration of Sentiments | Elizabeth Cady Stanton | 1848 | wikisource | public-domain-pre1931 | 2026-09-15 | cee2f7237f30 |
 | swift-modest-proposal | A Modest Proposal | Jonathan Swift | 1729 | gutenberg | public-domain-pre1931 | 2026-09-15 | c99823e64f2b |
 | thoreau-civil-disobedience | On the Duty of Civil Disobedience | Henry David Thoreau | 1849 | gutenberg | public-domain-pre1931 | 2026-09-15 | 28b00a18a7c1 |
