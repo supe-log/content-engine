@@ -1,0 +1,31 @@
+seeds/ela-writing/modern-sources.jsonl
+  s_e8c5dc23e2141e::t_992656dc60cd88 1-6
+provenance.jsonl
+  s_e8c5dc23e2141e::t_c74221039f20bf 13,17-18
+provenance.md
+  s_e8c5dc23e2141e::t_d4dd4d4d6555fe 19,23-24
+reports/ladder-gaps-2026-09-17.md
+  s_e8c5dc23e2141e::t_4e279ff073101f 1-34
+validated/ela-writing/owid-rise-of-social-media.json
+  s_e8c5dc23e2141e::t_fabd569bf336ea 1-38
+validated/ela-writing/reagan-challenger.json
+  s_e8c5dc23e2141e::t_7244c4243e7826 1-38
+validated/ela-writing/obama-first-inaugural.json
+  s_e8c5dc23e2141e::t_ac12301e80825a 1-37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "7ff2e52a9a9de3a75f513ce3a3eb98eaa2ac1326",
+  "prompts": {},
+  "sessions": {
+    "s_e8c5dc23e2141e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a7751bc7-5b0e-4cd9-a313-1e83136599a5",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Logan May <logan.may@superbuilders.school>"
+    }
+  }
+}
